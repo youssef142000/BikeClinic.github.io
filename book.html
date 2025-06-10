@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment | Bike Clinic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <header data-aos="fade-down" data-aos-delay="200">
+        <div class="container">
+            <div class="content">
+                <div data-aos="fade-down-right" data-aos-delay="300" class="logo">
+                    <a href="index.html">BIKE<span>CLINIC</span></a>
+                </div>
+                <nav>
+                    <a href="index.html#ourservice">Our Services</a>
+                    
+                    
+                    <box-icon type="solid" class="circle" name="circle" data-aos="zoom-in-down" data-aos-delay="300"></box-icon>
+                    <a href="talk-to-specialist.html">Talk to Specialist </a>
+                    
+                    
+                    
+                    <box-icon type="solid" class="circle" name="circle" data-aos="zoom-in-down" data-aos-delay="300"></box-icon>
+                    <a href="branches.html">Our Locations</a>
+                    
+                    <box-icon type="solid" class="circle" name="circle" data-aos="zoom-in-down" data-aos-delay="300"></box-icon>
+                    <a href="#">Shop Parts</a>
+                    
+                    <box-icon type="solid" class="circle" name="circle" data-aos="zoom-in-down" data-aos-delay="300"></box-icon>
+                    <a href="#">Shop Bikes</a>
+                </nav>
+
+                <div class="extra-nav">
+                    <a href="faq.html">FAQ</a>
+                    <button onclick="location.href='book.html'">Book Appointment</button>
+                    <box-icon name="shopping-bag" class="bag" data-aos="fade-down" data-aos-delay="400"></box-icon>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <section class="appointment-section">
+    <div class="container form-container">
+      <h1 class="form-title">Book an Appointment</h1>
+      <form class="appointment-form">
+        <div class="form-group">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+        </div>
+
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" required />
+          <input type="password" placeholder="Password" required />
+        </div>
+
+        <div class="form-group">
+          <select required>
+            <option value="">Select Service</option>
+            <option>Wheel Fixing</option>
+            <option>Tube Replacement</option>
+            <option>Brake Adjustment</option>
+            <option>Chain Lubrication</option>
+            <option>Full Tune-Up</option>
+            <option>Gear Shift Tuning</option>
+            <option>Suspension Check</option>
+          </select>
+          <input type="date" required />
+        </div>
+
+        <button type="submit" class="submit-btn">Confirm Booking</button>
+        
+      </form>
+      
+    </div>
+  </section>
+<div id="confirmation-overlay" class="confirmation-overlay hidden">
+  <div class="confirmation-box">
+    <div class="check-icon">✅</div>
+    <h2>Appointment Booked!</h2>
+    <p>Your appointment has been successfully scheduled. We’ll see you soon!</p>
+    <button onclick="location.href='index.html'" id="close-confirmation">Close</button>
+  </div>
+</div>
+
+  <footer>
+    <div class="container">
+      <div class="profile">
+        <div class="logo"><a href="#">BIKE<span>CLINIC</span></a></div>
+        <p>Trusted bike maintenance and repair experts — book your appointment today.</p>
+        <div class="social-media-container">
+          <div class="social-media"><box-icon color="#fff" type="logo" name="instagram"></box-icon></div>
+          <div class="social-media"><box-icon color="#fff" type="logo" name="youtube"></box-icon></div>
+          <div class="social-media"><box-icon color="#fff" type="logo" name="facebook-circle"></box-icon></div>
+        </div>
+      </div>
+
+      <div class="link-container">
+        <div class="information">
+          <h1>Information</h1>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="resource">
+          <h1>Help</h1>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div class="navigation">
+          <h1>Navigate</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Book Now</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+ 
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
